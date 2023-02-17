@@ -1,0 +1,34 @@
+ <nav>
+     <li>CHATBOT</li>
+</nav>
+<div class="smallcontainer">
+ <input type="checkbox"  id="show">
+  <label for="show" class="show-btn ">TELL ME</label>
+   <div class="container">
+
+    <div class="details"><h1>DETAILS</h1></div>
+     <label for="show" class="close-btn ">-</label> 
+      <%= form_for @student do |f| -%>
+       <form action=""> 
+        <div class="data">
+         <label> Name </label>
+          <%= f.text_field :name ,required: true %> 
+           
+        </div>    
+         <div class="data">
+          <label> Phone_number </label>
+           <%= f.text_field :phone_number, required: true %>
+           
+         </div>
+          <%= f.submit "SUBMIT" %>
+      <% end %>
+       </form>
+
+   </div>
+</div>
+       <script>
+        function welcome(){
+        alert(" DATA SUCCESSFULLY STORED")
+        }
+       </script>
+
