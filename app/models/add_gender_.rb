@@ -1,0 +1,2 @@
+class AddGender < ApplicationRecord
+end
